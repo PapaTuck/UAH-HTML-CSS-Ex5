@@ -1,0 +1,177 @@
+/* STYLE SHEET FOR EXERCISE2-KIDSPACE-GDTUCKER.HTML */
+body {
+  font-family: georgia, helvetica;
+  color: #ffffff;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #766aaf;
+}
+
+header {
+  border-style: solid;
+  border-width: 4px;
+  border-color: #766aaf;
+  text-align: center;
+  background: url("../media/kidrocket.jpg") 0 0 no-repeat, url("../media/kidrocket2.jpg") 100% 0 no-repeat, #f9f871;
+  background-size: contain;
+}
+
+h1 {
+  font-family: "Bradley Hand ITC", georgia, helvetica;
+  font-size: 300%;
+  font-style: oblique;
+  font-weight: bolder;
+  color: #38c7a6;
+  text-shadow: 0 3px 0 #036767;
+}
+
+h2 {
+  font-family: arial, "Bradley Hand ITC", georgia, helvetica;
+  font-size: 200175 oblique;
+  font-weight: bolder;
+  color: #38c7a6;
+}
+
+h3 {
+  font-weight: bolder;
+  font-size: 75%;
+  color: #38c7a6;
+}
+
+nav {
+  border: solid;
+  border-color: #766aaf;
+  background: #ffdf6f;
+  font-weight: bold;
+  float: left;
+  height: 100%;
+  padding-right: 32px;
+  margin-right: 12px;
+  padding-top: 48px;
+  padding-bottom: 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  background-image: url("../media/stars2.jpg");
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+canvas {
+  position: relative;
+  display: block;
+  background: rgba(70, 70, 70, .5);
+  width: 600px;
+  height: 200px;
+  margin: auto;
+}
+
+article {
+  margin: 10px;
+  padding: 10px;
+  text-align: justify;
+}
+
+fieldset {
+  border: 2px solid yellow;
+  padding: 1em;
+  font-size: 90%;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  margin: auto;
+}
+
+label {
+  float: left;
+  width: 100%;
+  margin-right: 0.6em;
+  padding-top: 0.6em;
+  text-align: left;
+  font-weight: bold;
+  display: inline-grid
+}
+
+.a2 {
+  background: rgba(70, 70, 70, .5);
+  margin: auto;
+  font-size: 70%;
+  text-align: left;
+}
+
+legend {
+  padding: 0.5em 0.5em;
+  border: 2px solid yellow;
+  color: yellow;
+  font-size: 100%;
+  text-align: center;
+}
+
+footer {
+  font-size: 75%;
+  text-align: center;
+  border: solid 4px;
+  border-color: #766aaf;
+  padding-top: 20PX;
+  padding-bottom: 20px;
+  clear: both;
+  color: #000000;
+}
+
+#drop-menu {
+  width: 158px;
+  cursor: pointer;
+  display: block;
+  border: 2px solid #036767;
+  padding: 5px;
+  height: 20px;
+  max-height: 20px;
+  background: #f9f871;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #036767;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 85%;
+  color: #036767;
+}
+
+#drop-menu:hover {
+  border: 3px solid #036767;
+}
+
+#drop-menu:hover .sub-menu {
+  display: inline-block;
+}
+
+.sub-menu {
+  display: none;
+  width: 168px;
+  padding: 6px 6px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 5px #036767;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.sub-menu li {
+  list-style-type: none;
+  display: block;
+  border: 2px solid #036767;
+  padding: 2px 5px;
+  background: #f9f871;
+  border-radius: 5px;
+}
+
+.sub-menu li:hover {
+  border: 3px solid #036767;
+}
+
+.floatright {
+  float: right;
+  margin: 0px;
+}

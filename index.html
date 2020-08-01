@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+  <title>GDTucker-Exercise5</title>
+</head>
+
+<body>
+  <header>
+    <h1>Kid Space</h1>
+
+    <div class="floatright" id="drop-menu">
+      Places we've been!
+      <ul class="sub-menu">
+        <li><a href="http://www.chocolate.moc">The MilkyWay</a></li>
+        <li><a href="http://www.almonds.moc"> The MarsBar</a></li>
+        <li><a href="http://www.peanuts.moc">The BabyRuth</a></li>
+      </ul>
+    </div>
+
+  </header>
+
+
+  <nav>
+    <ul>
+      <li><a href="http://www.noossaa.vog">Onodium</a></li>
+      <li><a href="http://www.noossaa.vog">Uhodium</a></li>
+      <li><a href="http://www.noossaa.vog">Ymedium</a></li>
+      <li><a href="http://www.noossaa.vog">Notmedium</a></li>
+      <li><a href="http://www.noossaa.vog">Idunnodium</a></li>
+      <li><a href="http://www.noossaa.vog">Urkidium</a></li>
+    </ul>
+
+  </nav>
+
+  <section>
+
+    <article>
+      <h2>New Planets Discovered!</h2>
+      <h3>&#8617;</h3>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </article>
+    <canvas id="canvas"></canvas>
+    <script>
+      const canvas = document.getElementById('canvas');
+      const ctx = canvas.getContext('2d');
+
+      //rocket first shape
+      ctx.strokeStyle = 'silver';
+
+      ctx.beginPath();
+      ctx.rect(50, 50, 120, 20);
+      ctx.fillStyle = "silver";
+      ctx.moveTo(50, 70);
+      ctx.lineTo(70, 50);
+      ctx.lineTo(45, 40);
+      ctx.moveTo(50, 50);
+      ctx.lineTo(70, 70);
+      ctx.lineTo(45, 80);
+      ctx.fill();
+      ctx.closePath();
+
+      ctx.font = "bold 20px sans-serif";
+      var gradient = ctx.createLinearGradient(0, 0, 150, 100);
+      gradient.addColorStop(0, '#ff0000');
+      gradient.addColorStop(.5, '#ff5a00');
+      gradient.addColorStop(1, '#fdff00');
+      ctx.fillStyle = gradient;
+
+      ctx.fillText("Shoot for the stars!", 60, 30);
+
+      //rocket second shape
+      ctx.strokeStyle = 'silver';
+
+      ctx.beginPath();
+      ctx.rect(48, 50, 40, 20);
+      ctx.fillStyle = "silver";
+      ctx.fill();
+      ctx.closePath();
+
+      //rocket third shape
+      ctx.strokeStyle = 'silver';
+      ctx.beginPath();
+      ctx.moveTo(170, 50);
+      ctx.lineTo(170, 70);
+      ctx.lineTo(200, 60);
+      ctx.fill();
+      ctx.closePath();
+
+
+      //rocket fourth shape
+      ctx.strokeStyle = 'black';
+      ctx.beginPath();
+      ctx.moveTo(170, 52);
+      ctx.lineTo(170, 60);
+      ctx.lineTo(190, 59);
+      ctx.fillStyle = "black";
+      ctx.fill();
+      ctx.closePath();
+    </script>
+
+    <article>
+      <h2>You Can Travel There Too!</h2>
+      Even more Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </article>
+
+    <article class="a2">
+
+      <h2>Sign up for the Kid Space monthly newsletter!</h2>
+
+      <p>
+        Receive exciting updates about our programs and far-out space activities right in your inbox!
+      </p>
+
+      <form autocomplete="off">
+        <fieldset name="personal_info">
+          <legend>Personal Information:</legend>
+          <label>
+            Role: <input placeholder="Student or Teacher" list="titles" name="title"><br>
+            <datalist id="titles">
+              <option value="Student">
+              <option value="Teacher">
+            </datalist>
+            First Name: <input autofocus required type="text" name="firstname" maxlength="8"><br>
+            Last Name: <input required type="text" name="lastname" maxlength="8"><br>
+            Date of Birth: <input type="date" name="dob"><br>
+            E-mail: <input type="email" placeholder="username@email.com" name="email" pattern="^.+@.+$"><br><br>
+          </label>
+          <button type="submit" formaction="#"><strong>Click to Submit!</strong></button>
+        </fieldset>
+        <br>
+
+      </form>
+
+    </article>
+
+
+
+
+  </section>
+
+
+  <footer>Explore <a href="http://www.noossaa.vog">NASA!</a> | Build Your Own Personal Space Ship! Visit <a href="http://www.BYOPSS.moc">DIY PSS</a> today!
+  </footer>
+
+</body>
+
+</html>
